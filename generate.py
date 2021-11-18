@@ -5,7 +5,7 @@ from random import randrange
 #                    {1,2,5},} 
 
 #input dimension matrix
-print('enter dimension of matrix')
+print('enter dimension of matrix :')
 k = int(input())
 j = k
 
@@ -19,7 +19,8 @@ for indexj in range(j):
     for indexk in range(k):
         mat[indexj].append(randrange(1,5))
 
-print(mat)
+
+
 
 for indexj in range(j):
     for indexk in range(k):
@@ -27,4 +28,9 @@ for indexj in range(j):
             mat[indexj][indexk] = sum(mat[indexj])+1
 
 #formatting matrix
-print(mat)
+stringMat = str(mat)
+
+stringMat = stringMat.replace('[', '{')
+stringMat = stringMat.replace(']', '}')
+print('------------------------------------')
+print(stringMat)
