@@ -34,3 +34,7 @@ stringMat = stringMat.replace('[', '{')
 stringMat = stringMat.replace(']', '}')
 print('------------------------------------')
 print(stringMat)
+
+f =open("out.txt", "w")
+f.write(stringMat)
+f.close()
